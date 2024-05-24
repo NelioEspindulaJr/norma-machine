@@ -1,3 +1,4 @@
+import json
 from operations.sub import sub
 from operations.sum import sum
 from operations.zero import zero
@@ -24,15 +25,12 @@ operation_index_identifier = 0
 while operation_index_identifier <= len(operations):
     operation = operations[operation_index_identifier]
 
-    print("operation", operation)
-
     if operation[0] == "ZER":
-       if zero(registers, operation[1]) == True:
+        if zero(registers, operation[1]) == True:
            operation_index_identifier = int(operation[2]) - 1
-       else:
+        else:
            operation_index_identifier = int(operation[3]) - 1 
     else:
-       instructions_dictionary[operation[0]](registers, operation[1])
-       operation_index_identifier = int(operation[2])- 1
-
+        instructions_dictionary[operation[0]](registers, operation[1])
+        operation_index_identifier = int(operation[2]) - 1
 print(registers)

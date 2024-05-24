@@ -1,10 +1,9 @@
-Caso 2: A := A + B usando C, onde o registrador C armazena a soma, A e B ficam zerados:
+A := A + B usando C, onde o registrador C armazena a soma, A e B ficam zerados:
 
-1: ZER B 20 2
-2: SUB B 3
-3: SUM A 4
-4: SUM C 5
-5: ZER B 6 2
-6: SUB C 7
-7: SUM B 8
-8: ZER C 20 6
+1: ZER B 5 2
+2: SUM A 3
+3: SUM C 4
+4: SUB B 1
+5: ZER C 100 6
+6: SUM B 7
+7: SUB C 5

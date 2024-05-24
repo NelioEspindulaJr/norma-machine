@@ -9,8 +9,8 @@ def read_file():
         
         try:
            with open(file_name, 'rt') as search_file:
-                for linha in search_file:
-                    operation = re.findall(r'(\w+)\s+(\w+)\s+(\d+)\s*(\d)*$', linha, flags=re.M |re.I)
+                for line in search_file:
+                    operation = re.findall(r'(\w+)\s+(\w+)\s+(\d+)\s*(\d+)*$', line, flags=re.M |re.I)
                     if operation:
                         operations.append(list(operation[0]))
         except (FileNotFoundError):
