@@ -1,0 +1,27 @@
+Teste se o valor da divisão inteira é zero Teste_mod(A, B) usando C, D, E, C’, D’, E’ 
+H = divisivel
+G = não divisivel
+
+1: ZER B 2 3
+2: SUM H 21
+3: ZER A 4 5
+4: SUM G 21
+5: ZER A 9 6
+6: SUM C 7
+7: SUM D 8
+8: SUB A 5
+9: ZER D 12 10
+10: SUM A 11
+11: SUB D 9
+12: ZER C 20 13
+13: ZER B 17 14
+14: SUB C 15
+15: SUB B 16
+16: SUM D 12
+17: ZER D 12 18
+18: SUM B 19
+19: SUB D 17
+20: ZER B 2 4
+21: ZER D 100 22
+22: SUM B 23
+23: SUB D 21

@@ -1,0 +1,13 @@
+Teste se o valor de um registrador é menor que outro registrador A < B usando C, D, E 
+C = A = B
+D = A > B 
+E = A < B
+
+1: ZER A 5 2
+2: SUB A 3
+3: ZER B 8 4
+4: SUB B 1
+5: ZER B 7 6
+6: SUM E 100
+7: SUM C 100
+8: SUM D 100
